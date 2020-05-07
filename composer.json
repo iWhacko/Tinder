@@ -1,23 +1,28 @@
 {
-    "name": "adewra/tinder",
-    "description": "Ability to access and execute Tinder's API used by their mobile applications.",
-    "license": "GPL-3.0",
-    "keywords": ["tinder", "matchmaking", "dating", "iOS", "android"],
-    "authors": [
-        {
-            "name": "Ally Dewar",
-            "email": "ally.dewar@adewra.com"
-        }
-    ],
-    "require": {
-        "guzzlehttp/guzzle": "5.2.*"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "4.0.*"
-    },
-    "autoload": {
-        "psr-4": {
-            "Adewra\\Tinder\\": "src"
-        }
-    }
+	"name" : "adewra/tinder",
+	"description" : "Ability to access and execute Tinder's API used by their mobile applications.",
+	"license" : "GPL-3.0",
+	"keywords" : [
+		"tinder",
+		"matchmaking",
+		"dating",
+		"iOS",
+		"android"
+	],
+	"authors" : [{
+			"name" : "Ally Dewar",
+			"email" : "ally.dewar@adewra.com"
+		}
+	],
+	"require" : {
+		"guzzlehttp/guzzle" : "5.2.*"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "4.0.*"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Adewra\\Tinder\\" : "src"
+		}
+	}
 }
