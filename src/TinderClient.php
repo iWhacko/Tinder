@@ -94,7 +94,18 @@ class TinderClient {
         //    throw new Exception("The supplied Tinder Authentication Token is not in UUID4 format.");
 
         $this->tinderAuthenticationToken = $token;
-        $this->guzzleClient->setDefaultOption('headers/X-Auth-Token', $token);
+        $this->guzzleClient = new Client([
+            'base_url' => ['https://api.gotinder.com', []],
+            'defaults' => [
+                'headers' => [  'X-Auth-Token'  =>  $token,
+                    'Accept'        =>  'application/json',
+                    'Content-type: application/json',
+                    'app_version: 3',
+                    'platform: ios',
+                    'User-Agent: Tinder/3.0.4 (iPhone; iOS 7.1; Scale/2.00)',
+                    'os_version: 700001']
+            ]
+        ]);
     }
 
     /**
